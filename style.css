@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*border: dashed red;*/
+}
+
+main{
+    margin: 0 3vw;
+    width:94vw;
+}
+
+header{
+    width:100vw;
+    background-color: #601316;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding: 2vw;
+
+}
+
+header h1{
+    white-space: nowrap;
+}
+
+#banner{
+    width: 50vw;
+    padding-right: 2vw;
+    margin-right: 3vw;
+}
+
+#logoImage{
+    width:20vw;
+}
+
+#logo{
+    background-color: #BE0B0B;
+    border-radius: 100%;
+    padding:5px;
+}
+nav{
+    padding: 0 10px;
+    background-color: black;
+    clear: both;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+nav ul a{
+    padding:5px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+nav ul a li{
+    font-size: 2.5vw;
+    color: white;
+}
+#date{
+    float:right;
+    margin:3px 0;
+}
+.contentBox{
+    clear:both;
+    display: flex;
+    justify-content: space-between;
+}
+.topic{
+    width: 100%;
+    background-color: #DEDEDE;
+}
+.newsCard{
+    width:32%;
+    height: 21vw;
+    margin: 1vw 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.biggerCard{
+    width:45%;
+}
+.newsCard img{
+    width:100%;
+    height: 15vw;
+    object-position: 0 0;
+    object-fit: fill;
+}
+.newsCard h3{
+    font-size: 1.5vw;
+    vertical-align: middle;
+}
+.mobileBanner{
+    display: none;
+}
+.mobileBanner img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.bannerRight{
+    margin: 1vw 0 1vw 1vw;
+    width: 30%;
+    height: auto;
+}
+.bannerRight img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.deviderBanner{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: black;
+    color:white;
+    height:20vh;
+    justify-content: space-between;
+}
+footer nav{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+#logoBottom{
+    align-self: center;
+    order:1;
+    margin-right: 3vw;
+}
+#copyright{
+    align-self: flex-end;
+    white-space: nowrap;
+}
+@media screen and (max-width: 480px){
+    #banner{
+        display: none;
+    }
+    
+    nav ul{
+        justify-self: center;
+    }
+    main{
+        width:90vw;
+    }
+    .newsCard{
+        width: 45%;
+    }
+    .bannerRight{
+        display: none;
+    }
+    .deviderBanner{
+        display: none;
+    }
+    .mobileBanner{
+        display: initial;
+    }
+    footer{
+        justify-content: center;
+    }
+    #logoBottom{
+        order:0;
+    }
+}
