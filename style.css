@@ -20,7 +20,9 @@ header{
     padding: 2vw;
 
 }
-
+a{
+    text-decoration: none;
+}
 header h1{
     white-space: nowrap;
 }
@@ -103,12 +105,12 @@ nav ul a li{
 }
 .bannerRight{
     margin: 1vw 0 1vw 1vw;
-    width: 30%;
+    width: 20vw;
     height: auto;
 }
 .bannerRight img{
     height: 100%;
-    width: 100%;
+    width: 10vw;
     object-fit: fill;
 }
 .deviderBanner{
@@ -168,4 +170,7 @@ footer nav{
     #logoBottom{
         order:0;
     }
+}
+#workInProgress{
+    width:90vw;
 }
