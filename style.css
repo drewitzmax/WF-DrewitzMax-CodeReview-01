@@ -141,7 +141,40 @@ footer nav{
     align-self: flex-end;
     white-space: nowrap;
 }
+
+.imgCaption{
+    color:dimgray;
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+}
+.articleHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.articleImage{
+    width:70%;
+    margin:10px 0;
+}
+.articleImage img{
+    width:100%;
+}
+article{
+    margin:20px 0;
+}
+.articleSection{
+    width: 100%;
+    height:auto;
+    margin: 10px 0;
+    font-size:16pt;
+}
 @media screen and (max-width: 480px){
+    #logoImage{
+        width:50vw;
+    }
     #banner{
         display: none;
     }
@@ -149,6 +182,9 @@ footer nav{
     nav ul{
         justify-self: center;
         justify-content: center;
+    }
+    nav ul a li{
+        font-size: 6vw;
     }
     main{
         width:90vw;
